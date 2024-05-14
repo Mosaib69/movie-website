@@ -1,0 +1,52 @@
+.navbar {
+  /* border: 1px solid black; */
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #B5C0D0;
+}
+
+.logo {
+  /* border: 1px solid green; */
+  width: 24%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movieLogo {
+  width: 45px;
+}
+
+span {
+  color: rgb(241, 25, 25);
+}
+
+.search {
+  width: 40%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  height: 100%;
+  width: 73%;
+  font-size: 18px;
+  padding-left: 8px;
+  border: none;
+  border-radius: 12px;
+}
+
+button {
+  height: 100%;
+  width: 25%;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background-color: rgb(241, 25, 25);
+  color: #fff;
+}
+

@@ -1,0 +1,17 @@
+.mainContainer {
+  margin: 50px 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media(max-width: 760px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+}
