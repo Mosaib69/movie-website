@@ -1,5 +1,5 @@
 import styles from "./Navbar.module.css";
-import img from "../images/film-reel.png";
+import img from "../myImages/film-reel.png";
 
 const SearchInput = () => {
   return (

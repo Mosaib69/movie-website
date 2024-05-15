@@ -1,16 +1,13 @@
 import styles from "./Movie.module.css";
 
-const Movie = () => {
+const Movie = ({ movie }) => {
+  let imageUrl = movie.image;
   return (
     <div className={styles.movieContainer}>
-      <img
-        className={styles.movieImage}
-        src="https://themoviesverse.cc/wp-content/uploads/Madame-Web-1.jpg"
-        alt=""
-      />
+      <img className={styles.movieImage} src={`${imageUrl}`} alt="Image" />
       <div className={styles.movieContent}>
-        <h3>The Shawshank Redemption</h3>
-        <p className={styles.rating}>Rating : 9.2</p>
+        <h3>{movie.movie}</h3>
+        <p className={styles.rating}>Rating : {movie.rating}</p>
       </div>
     </div>
   );

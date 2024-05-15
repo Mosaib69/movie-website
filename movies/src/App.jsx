@@ -1,19 +1,28 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import Container from "./components/Container";
-import Movie from "./components/Movie";
 import Navbar from "./components/Navbar";
+import MoviesList from "./components/MoviesList";
 
 const App = () => {
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const response = await fetch("https://dummyapi.online/api/movies");
+    const data = await response.json();
+    setMovies([...data]);
+  };
+  console.log(movies);
+
   return (
     <>
       <Navbar />
       <Container>
-        <Movie />
-        <Movie />
-        <Movie />
-        <Movie />
-        <Movie />
-        <Movie />
+        <MoviesList movies={movies} />
       </Container>
     </>
   );
