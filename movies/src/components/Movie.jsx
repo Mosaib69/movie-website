@@ -1,13 +1,19 @@
 import styles from "./Movie.module.css";
 
 const Movie = ({ movie }) => {
-  let imageUrl = movie.image;
+  const imagePath = "https://image.tmdb.org/t/p/w1280";
   return (
     <div className={styles.movieContainer}>
-      <img className={styles.movieImage} src={`${imageUrl}`} alt="Image" />
+      <img
+        className={styles.movieImage}
+        src={imagePath + movie.poster_path}
+        alt="Image"
+      />
       <div className={styles.movieContent}>
-        <h3>{movie.movie}</h3>
-        <p className={styles.rating}>Rating : {movie.rating}</p>
+        <h3>{movie.title}</h3>
+        <p className={styles.rating}>
+          Rating : {`${Math.round(movie.vote_average)}/10`}
+        </p>
       </div>
     </div>
   );

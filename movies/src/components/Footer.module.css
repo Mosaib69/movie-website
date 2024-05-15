@@ -1,0 +1,11 @@
+.footer {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #B5C0D0;
+  }
+
+p {
+  font-weight: 500;
+}

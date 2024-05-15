@@ -1,0 +1,18 @@
+.buttonsContainer {
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+}
+
+.button {
+  cursor: default;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-weight: 700;
+  background-color: rgb(241, 25, 25);;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
