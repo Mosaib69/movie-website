@@ -1,7 +1,5 @@
 .movieContainer {
-  width: 25%;
-  /* height: 300px; */
-  /* border: 1px solid red; */
+  width: 22.5vw;
   border-radius: 12px;
   padding: 10px;
 }
@@ -14,7 +12,6 @@
 }
 
 .movieContent {
-  height: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -22,4 +19,26 @@
 
 .rating {
   font-weight: 500;
+}
+
+@media(max-width : 600px){
+  .movieContainer {
+    margin: 1vw;
+    width: 43vw;
+  }
+
+  .movieContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .movieContent h3 {
+    font-size: 14px;
+  }
+
+  .movieContent p {
+    font-size: 12px;
+    font-weight: 400;
+  }
 }

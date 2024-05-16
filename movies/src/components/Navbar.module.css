@@ -1,6 +1,6 @@
 .navbar {
-  /* border: 1px solid black; */
   width: 100%;
+  height: 100px;
   padding: 30px;
   display: flex;
   justify-content: space-between;
@@ -8,11 +8,9 @@
   background-color: #B5C0D0;
   position: fixed;
   top: 0;
-  /* z-index: 44; */
 }
 
 .logo {
-  /* border: 1px solid green; */
   width: 24%;
   display: flex;
   justify-content: space-between;
@@ -29,28 +27,66 @@ span {
 
 .search {
   width: 40%;
-  height: 50px;
   display: flex;
   justify-content: space-between;
 }
 
 input {
-  height: 100%;
   width: 73%;
   font-size: 18px;
-  padding-left: 8px;
+  padding: 14px 8px;
   border: none;
   border-radius: 12px;
 }
 
 .buttons {
-  height: 100%;
   width: 25%;
+  padding: 14px 8px;
   border-radius: 12px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   border: none;
   background-color: rgb(241, 25, 25);
   color: #fff;
+}
+
+@media(max-width : 600px){
+  .navbar {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    /* margin-bottom: 8px; */
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .movieLogo {
+    width: 30px;
+  }
+
+  .search {
+    width: 90%;
+  }
+
+  input {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .buttons {
+    padding: 8px;
+    font-size: 12px;
+  }
 }
 

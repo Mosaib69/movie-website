@@ -9,3 +9,13 @@
 p {
   font-weight: 500;
 }
+
+@media(max-width : 600px){
+  .footer {
+    padding: 20px;
+  }
+  p{
+    font-weight: 700;
+    font-size: 10px;
+  }
+}

@@ -1,8 +1,18 @@
 .error {
-  height: calc(100vh - 279px);
+  height: calc(100vh - 216px);
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media(max-width : 600px){
+  .error {
+    height: calc(100vh - 190px);
+  }
+
+  .error h1 {
+    font-size: 25px;
+  }
 }
 
